@@ -1,0 +1,87 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyM/ob6ogW7Fx7P8dGo1w25p",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/laamartinezca/Curso2/blob/master/Diplomado-Ejercicios\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "yebUm3m-2GSx"
+      },
+      "outputs": [],
+      "source": [
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Ejercicio Clase # 1\n",
+        "Escriba un código en Python que devuelva el máximo valor de un vector."
+      ],
+      "metadata": {
+        "id": "vkqBRxgK2cIW"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np\n",
+        "\n",
+        "x1 = np.array([18, 3, 8, 4])\n",
+        "\n",
+        "def max_array1D(x1): \n",
+        "   \n",
+        "    max = x1[0]\n",
+        "    for i in range(1, x1.shape[0]): \n",
+        "        if x1[i] > max: \n",
+        "            max = x1[i] \n",
+        "    return max\n",
+        "\n",
+        "print(max_array1D(x1))\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "cjO3N0XF4SFk",
+        "outputId": "62558919-c891-464b-f2d7-0d3e40d1c341"
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "18\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
